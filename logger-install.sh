@@ -16,9 +16,9 @@ sudo apt-get install php-curl
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 composer require influxdb/influxdb-php
 
-wget https://github.com/toggio/PhpEpsolarTracer/archive/master.zip
+wget https://github.com/ydniw/PhpEpsolarTracer/archive/master.zip
 unzip -j master.zip
 rm master.zip
-wget https://github.com/chickey/Epever-influxdb/raw/master/logger.php
+wget https://github.com/ydniw/Epever-influxdb/raw/master/logger.php
 
-crontab -l | { cat; echo "0 0 0 0 0 php /home/pi/epeverlogger/logger.php"; } | crontab -
+crontab -l | { cat; echo "0 0 0 0 0 php /home/pi/Epever-influxdb/epeverlogger/logger.php"; } | crontab -
